@@ -1,0 +1,179 @@
+
+/**
+ * Things in here are a work in progress. They are likely to change
+ * frequently. If they stay they will be moved to other CSS files.
+ */ 
+
+
+
+/* the toolbar module adds an inline style to body which messes with the sticky footer */  
+
+body.toolbar {
+	padding-top: 0 !important;
+}
+
+body.toolbar #toolbar-gap {
+	height: 30px;
+}
+
+body.toolbar-drawer #toolbar-gap {
+	height: 65px;
+}
+
+
+
+/* --- nice vertical page look --- */
+
+body {
+  background: #444;
+}
+
+/* use this rule if you need full width header or footer */
+/*
+#header-wrapper,
+#main-wrapper,
+#footer-wrapper {
+	width: 980px;
+	margin: 0 auto;
+	background: #eee;
+	border-left: 2px solid #222;
+	border-right: 2px solid #222;
+}
+*/
+
+/* use this rule if you don't need full width header or footer */
+#page {
+	width: 980px;
+  background: #eee;
+	border-left: 2px solid #222;
+  border-right: 2px solid #222;
+}
+
+
+
+/* --- footer at bottom of page --- */
+
+html, body {
+  height: 100%;
+}
+
+#page {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -40px;
+}
+
+#footer-push {
+  height: 40px;
+}
+
+#footer {
+  height: 40px;
+}
+
+
+/* --- reset --- */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu,
+ul,
+.item-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu li,
+ul li,
+.item-list ul li {
+  margin-left: 14px;
+}
+
+
+/* --- nicer table styles --- */
+
+table {
+	border: 1px solid #ccc;
+}
+
+th {
+	background: #ccc;
+}
+
+th,
+td {
+	padding: 2px 8px;
+}
+
+
+
+/*--- nicer links --- */
+
+a {
+	text-decoration: none;
+	color: #0000cc;
+}
+
+a:hover,
+a:active {
+	text-decoration: underline;
+}
+
+
+/* fieldset */
+
+fieldset {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+fieldset legend {
+  padding: 0 4px;
+}
+
+.form-item .description {
+  font-size: 11px;
+  line-height: 17px;
+}
+
+
+/* --- colour scheme --- */
+
+.vertical-tabs ul.vertical-tabs-list li.selected {
+  background: #eee;
+}
+
+.vertical-tabs ul.vertical-tabs-list li.selected a,
+.vertical-tabs ul.vertical-tabs-list li a:hover {
+  outline: none;
+}
+
+.vertical-tabs ul.vertical-tabs-list li {
+	background: #ddd;
+}
+
+
+
+
+/* ul.primary */
+
+ul.primary {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+ul.primary li a {
+  border-radius: 6px 6px 0 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+ul.primary li.active a {
+  background-color: #eee;
+  border-bottom: 1px solid #eee;
+}
+

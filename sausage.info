@@ -1,0 +1,9 @@
+name = Sausage 7
+core = 7.x
+engine = phptemplate
+
+;stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/typography.css
+stylesheets[all][] = css/grid.css
+stylesheets[all][] = css/working.css
+
