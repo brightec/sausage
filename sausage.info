@@ -6,4 +6,5 @@ engine = phptemplate
 stylesheets[all][] = css/typography.css
 stylesheets[all][] = css/grid.css
 stylesheets[all][] = css/working.css
+stylesheets[all][] = css/prototype.css
 
