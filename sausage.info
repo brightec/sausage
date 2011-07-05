@@ -8,3 +8,4 @@ stylesheets[all][] = css/grid.css
 stylesheets[all][] = css/working.css
 stylesheets[all][] = css/prototype.css
 
+plugins[panels][styles] = styles
