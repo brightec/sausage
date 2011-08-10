@@ -96,11 +96,11 @@
           $main_width = 12;
           $main_push = 0;
 
-          if ($page['sidebar_first']) {
+          if (!empty($page['sidebar_first'])) {
             $main_width = $main_width - $sidebar_first_width;
             $main_push = $sidebar_first_width;
           }
-          if ($page['sidebar_second']) {
+          if (!empty($page['sidebar_second'])) {
             $main_width = $main_width - $sidebar_second_width;
           }
         
@@ -129,7 +129,7 @@
         </div> <!-- /.grid-n -->
 
 
-        <?php if ($page['sidebar_first']): ?>        
+        <?php if (!empty($page['sidebar_first'])): ?>
           <div class="grid_<?php print $sidebar_first_width; ?> clearfix pull_<?php print $main_width; ?>">
             <div id="sidebar-first">
               <?php print render($page['sidebar_first']); ?>
@@ -138,7 +138,7 @@
         <?php endif; ?>        
         
         
-        <?php if ($page['sidebar_second']): ?>        
+        <?php if (!empty($page['sidebar_second'])): ?>
           <div class="grid_<?php print $sidebar_second_width; ?> clearfix">
             <div id="sidebar-second">
               <?php print render($page['sidebar_second']); ?>

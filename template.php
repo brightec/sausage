@@ -24,5 +24,15 @@ function sausage_preprocess_page(&$variables) {
     }
   }
   
+
+  // 960 grid settings
+  $main_width = 12;
+  $main_push = 0;
+
+  // Set 960 grid template variables
+  $variables['main_width'] = $main_width;
+  $variables['main_push'] = $main_push;
+
+
 }
 
