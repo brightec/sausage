@@ -62,45 +62,45 @@ function sausage_grid_style_settings_form($conf, $display, $pid, $type, &$form_s
   $form['width'] = array(
     '#type' => 'textfield',
     '#title' => t('Width'),
-    //'#value' => isset($form_state['conf']['width']) ? $form_state['conf']['width'] : '',
+    '#default_value' => isset($form_state['conf']['width']) ? $form_state['conf']['width'] : '',
   );
   $form['prefix'] = array(
     '#type' => 'textfield',
     '#title' => t('Prefix'),
-    //'#value' => isset($form_state['conf']['width']) ? $form_state['conf']['width'] : '',
+    '#default_value' => isset($form_state['conf']['prefix']) ? $form_state['conf']['prefix'] : '',
   );
     $form['suffix'] = array(
     '#type' => 'textfield',
     '#title' => t('Suffix'),
-    //'#value' => isset($form_state['conf']['width']) ? $form_state['conf']['width'] : '',
+    '#default_value' => isset($form_state['conf']['suffix']) ? $form_state['conf']['suffix'] : '',
   );
     $form['push'] = array(
     '#type' => 'textfield',
     '#title' => t('Push'),
-    //'#value' => isset($form_state['conf']['width']) ? $form_state['conf']['width'] : '',
+    '#default_value' => isset($form_state['conf']['push']) ? $form_state['conf']['push'] : '',
   );
     $form['pull'] = array(
     '#type' => 'textfield',
     '#title' => t('Pull'),
-    //'#value' => isset($form_state['conf']['width']) ? $form_state['conf']['width'] : '',
+    '#default_value' => isset($form_state['conf']['pull']) ? $form_state['conf']['pull'] : '',
   );
   $form['alpha'] = array(
     '#type' => 'checkbox',
   	'#title' => t('Alpha'),
     '#description' => t('Is this the first item within a nested grid?'),
-    //'#value' => isset($form_state['conf']['width']) ? $form_state['conf']['width'] : '',
+    '#default_value' => isset($form_state['conf']['alpha']) ? $form_state['conf']['alpha'] : '',
   );
   $form['omega'] = array(
     '#type' => 'checkbox',
   	'#title' => t('Omega'),
     '#description' => t('Is this the first item within a nested grid?'),
-    //'#value' => isset($form_state['conf']['width']) ? $form_state['conf']['width'] : '',
+    '#default_value' => isset($form_state['conf']['omega']) ? $form_state['conf']['omega'] : '',
   );
   $form['debug'] = array(
     '#type' => 'checkbox',
   	'#title' => t('Border for debugging'),
     '#description' => t('Under certain themes, includes a border around the pane'),
-    //'#value' => isset($form_state['conf']['width']) ? $form_state['conf']['width'] : '',
+    '#default_value' => isset($form_state['conf']['debug']) ? $form_state['conf']['debug'] : '',
   );
   
   return $form;
